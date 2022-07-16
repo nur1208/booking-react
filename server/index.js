@@ -3,6 +3,8 @@ import morgan from "morgan";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
+import cookieParser from "cookie-parser";
+import authRoute from "./routes/auth.js";
 
 dotenv.config();
 
@@ -19,8 +21,10 @@ const main = async () => {
     const port = 4050;
 
     // TODO connect to that database then start the server.
-    // app.use(morgan("dev"));
+    if (process.env.NODE_ENV.trim() === "development")
+      app.use(morgan("dev"));
     app.use(express.json()); // support json encoded bodies
+    app.use(cookieParser());
     // app.use(express.urlencoded({ extended: true })); // support encoded bodies
     // app.use(express.cookieParser());
     // app.use(cookieParser());
@@ -38,16 +42,18 @@ const main = async () => {
     // });
 
     // Routing
-    // app.use("/api/v1/news", newsRouter);
-    // app.use("/api/v1/companies", companyRouter);
-    // app.use("/api/v1/questions", questionRouter);
-    // app.use(
-    //   "/api/v1/unknownKeywords",
-    //   unknownKeywordForCompanyRouter
-    // );
-    // app.use("/api/v1/testedStrategy", strategyTestedRouter);
-    // app.use("/api/v1/users", userRouter);
-
+    app.use("/api/v1/auth", authRoute);
+    app.use((err, req, res, next) => {
+      const errorStatus = err.status || 500;
+      const errorMessage =
+        err.message || "Something went wrong!";
+      return res.status(errorStatus).json({
+        success: false,
+        status: errorStatus,
+        message: errorMessage,
+        stack: err.stack,
+      });
+    });
     // app.use(globalErrorHandler);
     app.listen(port, () => {
       console.log(

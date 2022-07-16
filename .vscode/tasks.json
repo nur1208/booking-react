@@ -1,5 +1,4 @@
 {
-  "version": "2.0.0",
   "tasks": [
     {
       "type": "npm",
@@ -7,7 +6,7 @@
       "path": "server/",
       "problemMatcher": [],
       "label": "npm: start-dev - server",
-      "detail": "nodemon index.js",
+      "detail": "set NODE_ENV=development&&nodemon index.js",
       "group": "build"
     }
   ]
