@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "start-dev",
+      "path": "server/",
+      "problemMatcher": [],
+      "label": "npm: start-dev - server",
+      "detail": "nodemon index.js",
+      "group": "build"
+    }
+  ]
+}
