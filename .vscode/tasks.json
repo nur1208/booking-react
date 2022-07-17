@@ -8,6 +8,15 @@
       "label": "npm: start-dev - server",
       "detail": "set NODE_ENV=development&&nodemon index.js",
       "group": "build"
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "path": "admin/",
+      "problemMatcher": [],
+      "label": "npm: start - admin",
+      "detail": "react-scripts start",
+      "group": "build"
     }
   ]
 }
