@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import authRoute from "./routes/auth.js";
+import usersRoute from "./routes/users.js";
 
 dotenv.config();
 
@@ -43,6 +44,7 @@ const main = async () => {
 
     // Routing
     app.use("/api/v1/auth", authRoute);
+    app.use("/api/v1/users", usersRoute);
     app.use((err, req, res, next) => {
       const errorStatus = err.status || 500;
       const errorMessage =

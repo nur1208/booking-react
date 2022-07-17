@@ -1,3 +1,4 @@
 - {DONE} set up the server
 - {DONE} deploying the server
 - {DONE} create auth endpoints
+- {DONE} create user endpoints
