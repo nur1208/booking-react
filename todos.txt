@@ -5,4 +5,4 @@
 - {DONE} create hotel endpoints
 - {DONE} create room endpoints
 - {DONE} set up admin website using create-react-app
-- {TODO} deploy the admin website in vercel
+- {DONE} deploy the admin website in vercel
