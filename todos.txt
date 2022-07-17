@@ -3,3 +3,4 @@
 - {DONE} create auth endpoints
 - {DONE} create user endpoints
 - {DONE} create hotel endpoints
+- {DONE} create room endpoints
