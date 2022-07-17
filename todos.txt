@@ -6,3 +6,6 @@
 - {DONE} create room endpoints
 - {DONE} set up admin website using create-react-app
 - {DONE} deploy the admin website in vercel
+- {DONE} set up react-router-dom from admin website
+not important now:
+- {TODO} improve DarkModeReducer by adding const
