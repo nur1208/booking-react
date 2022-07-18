@@ -9,6 +9,7 @@
 - {DONE} set up react-router-dom from admin website
 - {DONE} create login page admin website
 - {DONE} create sidebar component
+- {DONE} create Navbar component and modifying home page
 - {TODO} create home page admin website
 
 not important now:
