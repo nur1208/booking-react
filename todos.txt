@@ -12,8 +12,8 @@
 - {DONE} create Navbar component and modifying home page
 - {DONE} create Widget component and modifying home page
 - {DONE} create Featured component and modifying home page
-- {DONE} create Featured component and modifying home page
-- {TODO} remove package.json from root folder
+- {DONE} remove package.json from root folder
+- {DONE} create Chart component and modifying home page
 - {TODO} create home page admin website
 
 not important now:
