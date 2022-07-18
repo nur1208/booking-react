@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
 import { DarkModeContext } from "./context/darkModeContext";
+import { Home } from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import "./style/dark.scss";
 
@@ -32,13 +33,12 @@ function App() {
               index
               element={
                 <ProtectedRoute>
-                  <div>home page</div>
+                  <Home />
                 </ProtectedRoute>
               }
             />
             <Route path="login" element={<Login />} />
           </Route>
-          <Route path="signup" element={<div>signup</div>} />
         </Routes>
       </BrowserRouter>
     </div>
