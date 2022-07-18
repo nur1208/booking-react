@@ -11,6 +11,7 @@
 - {DONE} create sidebar component
 - {DONE} create Navbar component and modifying home page
 - {DONE} create Widget component and modifying home page
+- {DONE} create Featured component and modifying home page
 - {TODO} create home page admin website
 
 not important now:

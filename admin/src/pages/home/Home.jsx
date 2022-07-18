@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import "./home.scss";
 import React from "react";
 import Widget from "../../components/widget/Widget";
+import Featured from "../../components/featured/Featured";
 
 export const Home = () => {
   return (
@@ -17,7 +18,7 @@ export const Home = () => {
           <Widget type="balance" />
         </div>
         <div className="charts">
-          {/* <Featured /> */}
+          <Featured />
           {/* <Chart
             title="Last 6 Months (Revenue)"
             aspect={2 / 1}
