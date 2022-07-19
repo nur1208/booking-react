@@ -50,6 +50,14 @@ function App() {
                 }
               />
             </Route>
+            <Route
+              path=":userId"
+              element={
+                <ProtectedRoute>
+                  {/* <Single /> */}
+                </ProtectedRoute>
+              }
+            />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -16,7 +16,9 @@
 - {DONE} create Chart component and modifying home page
 - {DONE} create Table component and modifying home page and finish creating home page admin website
 - {DONE} create Datatable component
-- {DONE} create List page 
+- {DONE} create List page
+- {DONE} create Single page
+ 
 
 not important now:
 - {TODO} improve DarkModeReducer by adding const
@@ -30,3 +32,4 @@ not important now:
         setList(data);
         }, [data]);
 - {TODO} add loading when fetching data in List component
+- {TODO} make Single component dynamic
