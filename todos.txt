@@ -18,6 +18,7 @@
 - {DONE} create Datatable component
 - {DONE} create List page
 - {DONE} create Single page
+- {DONE} create New page
  
 
 not important now:
@@ -33,3 +34,6 @@ not important now:
         }, [data]);
 - {TODO} add loading when fetching data in List component
 - {TODO} make Single component dynamic
+- {TODO} convert ProtectedRoute to useProtectedRoute hook
+- {TODO} move data js files to data folder
+- {TODO} make New component dynamic

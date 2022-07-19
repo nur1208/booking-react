@@ -5,12 +5,15 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import Single from "./components/single/Single";
 import { AuthContext } from "./context/AuthContext";
 import { DarkModeContext } from "./context/darkModeContext";
 import { userColumns } from "./datatablesource";
+import { userInputs } from "./formSource";
 import { Home } from "./pages/home/Home";
 import List from "./pages/list/List";
 import Login from "./pages/login/Login";
+import New from "./pages/new/New";
 import "./style/dark.scss";
 
 function App() {
@@ -49,15 +52,26 @@ function App() {
                   </ProtectedRoute>
                 }
               />
+              <Route
+                path=":userId"
+                element={
+                  <ProtectedRoute>
+                    <Single />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="new"
+                element={
+                  <ProtectedRoute>
+                    <New
+                      inputs={userInputs}
+                      title="Add New User"
+                    />
+                  </ProtectedRoute>
+                }
+              />
             </Route>
-            <Route
-              path=":userId"
-              element={
-                <ProtectedRoute>
-                  {/* <Single /> */}
-                </ProtectedRoute>
-              }
-            />
           </Route>
         </Routes>
       </BrowserRouter>
