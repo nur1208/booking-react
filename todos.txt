@@ -19,6 +19,8 @@
 - {DONE} create List page
 - {DONE} create Single page
 - {DONE} create New page
+- {DONE} create NewHotel page
+- {DONE} fix routes error 
  
 
 not important now:

@@ -47,8 +47,8 @@ const main = async () => {
     // Routing
     app.use("/api/v1/auth", authRoute);
     app.use("/api/v1/users", usersRoute);
-    app.use("/api/hotels", hotelsRoute);
-    app.use("/api/rooms", roomsRoute);
+    app.use("/api/v1/hotels", hotelsRoute);
+    app.use("/api/v1/rooms", roomsRoute);
 
     app.use((err, req, res, next) => {
       const errorStatus = err.status || 500;
