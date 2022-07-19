@@ -5,6 +5,7 @@ import React from "react";
 import Widget from "../../components/widget/Widget";
 import Featured from "../../components/featured/Featured";
 import Chart from "../../components/chart/Chart";
+import Table from "../../components/table/Table";
 
 export const Home = () => {
   return (
@@ -27,7 +28,7 @@ export const Home = () => {
         </div>
         <div className="listContainer">
           <div className="listTitle">Latest Transactions</div>
-          {/* <Table /> */}
+          <Table />
         </div>
       </div>
     </div>

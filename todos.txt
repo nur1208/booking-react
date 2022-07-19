@@ -14,7 +14,7 @@
 - {DONE} create Featured component and modifying home page
 - {DONE} remove package.json from root folder
 - {DONE} create Chart component and modifying home page
-- {TODO} create home page admin website
+- {DONE} create Table component and modifying home page and finish creating home page admin website
 
 not important now:
 - {TODO} improve DarkModeReducer by adding const
