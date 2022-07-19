@@ -15,8 +15,18 @@
 - {DONE} remove package.json from root folder
 - {DONE} create Chart component and modifying home page
 - {DONE} create Table component and modifying home page and finish creating home page admin website
+- {DONE} create Datatable component
+- {DONE} create List page 
 
 not important now:
 - {TODO} improve DarkModeReducer by adding const
 - {TODO} create server folder for make http requests
 - {TODO} imporve components file structure
+- {TODO} clean useFetch data
+- {TODO} improve 
+         const { data, loading, error } = useFetch(`/${path}`);
+
+        useEffect(() => {
+        setList(data);
+        }, [data]);
+- {TODO} add loading when fetching data in List component
