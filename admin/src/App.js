@@ -38,6 +38,16 @@ function App() {
               }
             />
             <Route path="login" element={<Login />} />
+            <Route path="users">
+              <Route
+                index
+                element={
+                  <ProtectedRoute>
+                    {/* <List columns={userColumns} /> */}
+                  </ProtectedRoute>
+                }
+              />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
