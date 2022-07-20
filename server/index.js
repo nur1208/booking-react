@@ -32,7 +32,7 @@ const main = async () => {
     // app.use(express.cookieParser());
     // app.use(cookieParser());
     // Setting up middleware
-    // app.use(cors("http://localhost:3000"));
+    app.use(cors());
     // app.use(express.static("public"));
     // app.use(initialize());
 

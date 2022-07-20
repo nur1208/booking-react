@@ -25,6 +25,7 @@
 - {DONE} fix getHotels controller, it doesn't return hotels documents, it always returns an empty array 
 - {DONE} change server url in admin package.json 
         // "proxy": "http://localhost:4050/api/v1"
+- {TODO} removing proxy from package.json and create services folder to handle http requests        
 - {TODO} test admin online website 
 
 not important now:
