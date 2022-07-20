@@ -22,9 +22,13 @@
 - {DONE} create NewHotel page
 - {DONE} fix routes error 
 - {DONE} create NewRoom page
-- {TODO} fix getHotels controller, it doesn't return hotels documents, it always returns an empty array 
+- {DONE} fix getHotels controller, it doesn't return hotels documents, it always returns an empty array 
+- {DONE} change server url in admin package.json 
+        // "proxy": "http://localhost:4050/api/v1"
+- {TODO} test admin online website 
 
 not important now:
+- {TODO} add logout functionality in admin website
 - {TODO} improve DarkModeReducer by adding const
 - {TODO} create server folder for make http requests
 - {TODO} imporve components file structure
@@ -41,3 +45,4 @@ not important now:
 - {TODO} move data js files to data folder
 - {TODO} make New component dynamic
 - {TODO} save theme data in localstorage
+- {TODO} fix 500 Internal Server Error when create new room without selecting a hotel
