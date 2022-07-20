@@ -2,18 +2,20 @@ import "./newRoom.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { roomInputs } from "../../formSource";
 import useFetch from "../../hooks/useFetch";
 import axios from "axios";
+import GenericEndpoints from "../../services/generic";
+import { AuthContext } from "../../context/AuthContext";
 
 const NewRoom = () => {
   const [info, setInfo] = useState({});
   const [hotelId, setHotelId] = useState(undefined);
   const [rooms, setRooms] = useState([]);
 
-  const { data, loading, error } = useFetch("/hotels");
-
+  const { data, loading, error } = useFetch("hotels");
+  const { user } = useContext(AuthContext);
   const handleChange = (e) => {
     setInfo((prev) => ({
       ...prev,
@@ -27,10 +29,19 @@ const NewRoom = () => {
       .split(",")
       .map((room) => ({ number: room }));
     try {
-      await axios.post(`/rooms/${hotelId}`, {
-        ...info,
-        roomNumbers,
-      });
+      await GenericEndpoints.post(
+        "rooms",
+        {
+          ...info,
+          roomNumbers,
+        },
+        user?.token,
+        hotelId
+      );
+      // await axios.post(`/rooms/${hotelId}`, {
+      //   ...info,
+      //   roomNumbers,
+      // });
     } catch (err) {
       console.log(err);
     }

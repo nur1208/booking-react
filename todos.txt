@@ -25,10 +25,12 @@
 - {DONE} fix getHotels controller, it doesn't return hotels documents, it always returns an empty array 
 - {DONE} change server url in admin package.json 
         // "proxy": "http://localhost:4050/api/v1"
+- {TODO} send jwt token with a user data        
 - {TODO} removing proxy from package.json and create services folder to handle http requests        
 - {TODO} test admin online website 
-
+- {TODO} fix can't delete rooms 
 not important now:
+- {TODO} show a user messages
 - {TODO} add logout functionality in admin website
 - {TODO} improve DarkModeReducer by adding const
 - {TODO} create server folder for make http requests

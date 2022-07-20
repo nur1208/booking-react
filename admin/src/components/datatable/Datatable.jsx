@@ -2,15 +2,18 @@ import "./datatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, userRows } from "../../datatablesource";
 import { Link, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import useFetch from "../../hooks/useFetch";
 import axios from "axios";
+import GenericEndpoints from "../../services/generic";
+import { AuthContext } from "../../context/AuthContext";
 
 const Datatable = ({ columns }) => {
   const location = useLocation();
   const path = location.pathname.split("/")[1];
   const [list, setList] = useState([]);
-  const { data, loading, error } = useFetch(`/${path}`);
+  const { data, loading, error } = useFetch(path);
+  const { user } = useContext(AuthContext);
 
   useEffect(() => {
     setList(data);
@@ -18,7 +21,7 @@ const Datatable = ({ columns }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`/${path}/${id}`);
+      await GenericEndpoints.delete(path, id, user?.token);
       setList(list.filter((item) => item._id !== id));
     } catch (err) {}
   };
