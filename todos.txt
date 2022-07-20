@@ -21,7 +21,8 @@
 - {DONE} create New page
 - {DONE} create NewHotel page
 - {DONE} fix routes error 
- 
+- {DONE} create NewRoom page
+- {TODO} fix getHotels controller, it doesn't return hotels documents, it always returns an empty array 
 
 not important now:
 - {TODO} improve DarkModeReducer by adding const
@@ -39,3 +40,4 @@ not important now:
 - {TODO} convert ProtectedRoute to useProtectedRoute hook
 - {TODO} move data js files to data folder
 - {TODO} make New component dynamic
+- {TODO} save theme data in localstorage

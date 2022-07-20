@@ -8,13 +8,18 @@ import {
 import Single from "./components/single/Single";
 import { AuthContext } from "./context/AuthContext";
 import { DarkModeContext } from "./context/darkModeContext";
-import { userColumns, hotelColumns } from "./datatablesource";
+import {
+  userColumns,
+  hotelColumns,
+  roomColumns,
+} from "./datatablesource";
 import { userInputs } from "./formSource";
 import { Home } from "./pages/home/Home";
 import List from "./pages/list/List";
 import Login from "./pages/login/Login";
 import New from "./pages/new/New";
 import NewHotel from "./pages/newHotel/NewHotel";
+import NewRoom from "./pages/newRoom/NewRoom";
 import "./style/dark.scss";
 
 function App() {
@@ -95,6 +100,32 @@ function App() {
                 element={
                   <ProtectedRoute>
                     <NewHotel />
+                  </ProtectedRoute>
+                }
+              />
+            </Route>
+            <Route path="rooms">
+              <Route
+                index
+                element={
+                  <ProtectedRoute>
+                    <List columns={roomColumns} />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path=":productId"
+                element={
+                  <ProtectedRoute>
+                    <Single />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="new"
+                element={
+                  <ProtectedRoute>
+                    <NewRoom />
                   </ProtectedRoute>
                 }
               />
