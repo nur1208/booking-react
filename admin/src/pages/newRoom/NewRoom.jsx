@@ -34,6 +34,7 @@ const NewRoom = () => {
         {
           ...info,
           roomNumbers,
+          hotelId,
         },
         user?.token,
         hotelId

@@ -29,7 +29,7 @@
 - {DONE} removing proxy from package.json and create services folder to handle http requests
         update baseURL in api file
 - {DONE} test admin online website 
-- {TODO} fix can't delete rooms 
+- {DONE} fix can't delete rooms 
         - {DONE} add hotelId paramenter to Room Schema
 not important now:
 - {TODO} show a user messages

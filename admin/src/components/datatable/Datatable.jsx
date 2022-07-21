@@ -19,9 +19,14 @@ const Datatable = ({ columns }) => {
     setList(data);
   }, [data]);
 
-  const handleDelete = async (id) => {
+  const handleDelete = async (id, other) => {
     try {
-      await GenericEndpoints.delete(path, id, user?.token);
+      await GenericEndpoints.delete(
+        path,
+        id,
+        user?.token,
+        other?.hotelId
+      );
       setList(list.filter((item) => item._id !== id));
     } catch (err) {}
   };
@@ -42,7 +47,11 @@ const Datatable = ({ columns }) => {
             </Link>
             <div
               className="deleteButton"
-              onClick={() => handleDelete(params.row._id)}
+              onClick={() =>
+                handleDelete(params.row._id, {
+                  hotelId: params.row.hotelId,
+                })
+              }
             >
               Delete
             </div>
