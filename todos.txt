@@ -32,8 +32,8 @@
 - {DONE} fix can't delete rooms 
         - {DONE} add hotelId paramenter to Room Schema
 - {DONE} set up client website using create-react-app
-- {TODO} deploy the client website in vercel
-
+- {DONE} deploy the client website in vercel
+- {DONE} set up react-router-dom from client website
 
 not important now:
 - {TODO} show a user messages
