@@ -31,6 +31,10 @@
 - {DONE} test admin online website 
 - {DONE} fix can't delete rooms 
         - {DONE} add hotelId paramenter to Room Schema
+- {DONE} set up client website using create-react-app
+- {TODO} deploy the client website in vercel
+
+
 not important now:
 - {TODO} show a user messages
 - {TODO} add logout functionality in admin website

@@ -17,6 +17,15 @@
       "label": "npm: start - admin",
       "detail": "react-scripts start",
       "group": "build"
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "path": "frontend/",
+      "problemMatcher": [],
+      "label": "npm: start - frontend",
+      "detail": "react-scripts start",
+      "group": "build"
     }
   ]
 }
