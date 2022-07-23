@@ -38,7 +38,7 @@
 - {DONE} create MailList  component
 - {DONE} create Navbar  component
 
-- {TODO} create HOME page client website
+- {DONE} create HOME page client website
 
 not important now:
 - {TODO} show a user messages
