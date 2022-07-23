@@ -35,6 +35,7 @@
 - {DONE} deploy the client website in vercel
 - {DONE} set up react-router-dom from client website
 - {DONE} create Featured , FeaturedProperties , Footer , Header  components
+- {DONE} create MailList  component
 
 - {TODO} create HOME page client website
 
