@@ -36,6 +36,7 @@
 - {DONE} set up react-router-dom from client website
 - {DONE} create Featured , FeaturedProperties , Footer , Header  components
 - {DONE} create MailList  component
+- {DONE} create Navbar  component
 
 - {TODO} create HOME page client website
 
