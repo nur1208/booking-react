@@ -39,9 +39,12 @@
 - {DONE} create Navbar  component
 
 - {DONE} create HOME page client website
+- {DONE} create Hotel page client website
+- {DONE} fixing fetching data error
 
 not important now:
-- {TODO} show a user messages
+- {TODO} improve search functionality by making it caus insensitvie and not exect search
+- {TODO} show a user messages in admin website
 - {TODO} add logout functionality in admin website
 - {TODO} improve DarkModeReducer by adding const
 - {TODO} create server folder for make http requests

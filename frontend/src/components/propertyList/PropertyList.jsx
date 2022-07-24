@@ -3,7 +3,7 @@ import "./propertyList.css";
 
 const PropertyList = () => {
   const { data, loading, error } = useFetch(
-    "/hotels/countByType"
+    "hotels/countByType"
   );
 
   const images = [
